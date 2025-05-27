@@ -10,7 +10,8 @@ const Navbar = () => {
   const closeMenu = () => setMenuOpen(false);
 
   const linkBaseClasses =
-    'block py-2 px-3 md:p-0 border-b-2 border-transparent rounded-sm transition-all duration-300 ease-in-out';
+  'block py-2 px-4 md:py-1 md:px-4 border-b-2 border-transparent transition-all duration-300 ease-in-out';
+
 
   const getLinkClasses = (path) =>
     location.pathname === path
@@ -20,8 +21,8 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={logo} className="h-8" alt="IMRSIV Logo" />
+        <Link to="/" className="flex items-center space-x-2 rtl:space-x-reverse">
+          <img src={logo} className="h-8  w-[100% h-[100%]]" alt="IMRSIV Logo" />
         </Link>
         <div className="flex md:order-2">
           <button
@@ -61,8 +62,8 @@ const Navbar = () => {
           }`}
           id="navbar-cta"
         >
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-fuchsia-600 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white rtl:space-x-reverse">
-            <li>
+<ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-[#A21CAF] rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white rtl:space-x-reverse">
+<li>
               <Link to="/" className={getLinkClasses('/')} onClick={closeMenu}>
                 Home
               </Link>

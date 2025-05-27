@@ -17,23 +17,20 @@ const JoinOurTeam = () => {
       <div className="max-w-8xl mx-auto flex flex-col md:flex-row gap-12 bg-gradient-to-r bg-black text-white rounded-lg p-8 shadow-lg">
         {/* Info Section */}
         <div className="md:w-1/2 flex flex-col justify-center">
-          <h2 className="bg-white text-fuchsia-800 px-6 py-3 inline-block rounded-md font-bold text-xl mb-5 shadow-sm">
-            Join Our Team,
-          </h2>
+          <h2 className="bg-white text-black px-6 py-3 inline-block   rounded-md font-bold text-4xl mb-5 shadow-sm">
+          We're Hiring!          </h2>
           <h3 className="text-4xl font-extrabold mb-6 leading-tight">
-            We're Looking for Talented Individuals
-          </h3>
+          Join Our Team          </h3>
+          <hr className='p-4' />
           <p className="text-lg mb-5 leading-relaxed opacity-90">
-            Passionate about digital marketing? Eager to contribute to a dynamic team? Explore our open positions below and apply directly!
-          </p>
-          <p className="text-md opacity-90">
-            Interested in a specific role? Use the form on the right. For general inquiries, feel free to message us.
-          </p>
+          If you're interested in one of our open positions, start by applying here and attaching your resume.          </p>
+        
         </div>
 
         {/* Form Section */}
-        <div className="md:w-1/2 bg-white rounded-lg p-8 shadow-lg text-gray-900">
-          <h3 className="text-3xl font-bold mb-6 text-center text-fuchsia-700">Apply Now</h3>
+        <div className="md:w-1/2  rounded-lg p-15 shadow-lg text-white">
+          <h3 className="text-3xl font-bold mb-6  text-white">Apply Now</h3>
+          <hr className='p-3' />
           <form className="space-y-5">
             <div>
               <label htmlFor="name" className="block mb-2 font-semibold">Name</label>

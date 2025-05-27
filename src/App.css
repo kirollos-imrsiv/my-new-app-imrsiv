@@ -4,6 +4,17 @@
   padding: 2rem;
   text-align: center;
 }
+/* خلي الحاوية الرئيسية 100% ارتفاع الشاشة */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* خلي المحتوى الرئيسي ياخد أكبر مساحة ممكنة */
+.main-content {
+  flex: 1;
+}
 
 .logo {
   height: 6em;
@@ -39,4 +50,9 @@
 
 .read-the-docs {
   color: #888;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
 }

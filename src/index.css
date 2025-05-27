@@ -1,1 +1,12 @@
+
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* index.css أو داخل ملف Tailwind */
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
